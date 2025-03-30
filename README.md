@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -23,7 +24,7 @@
         }
 
         h2 {
-            color: #ffffff;
+            color: #000;
         }
 
         label {
