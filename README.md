@@ -23,7 +23,7 @@
         }
 
         h2 {
-            color: #000;
+            color: #ffffff;
         }
 
         label {
