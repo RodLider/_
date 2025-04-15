@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crédito para Investimento</title>
+    <title>CRÉDITO PARA INVESTIMENTOS</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: url('https://i.imgur.com/aPLuDmc.jpeg') no-repeat center center fixed;
+            background: url('https://i.imgur.com/m1HgDnr.png') no-repeat center center fixed;
             background-size: cover;
             text-align: center;
             padding: 20px;
