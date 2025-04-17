@@ -1,4 +1,3 @@
-
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -12,8 +11,9 @@
             text-align: center;
             padding: 20px;
             margin: 0;
+            text-transform: uppercase;
         }
-        
+
         .container {
             background: rgba(255, 255, 255, 0.9);
             padding: 20px;
@@ -75,13 +75,10 @@
 <body>
 
 <div class="container">
-    <h2>Crédito para Investimento</h2>
+    <h2>CRÉDITO PARA INVESTIMENTO</h2>
     <form id="creditoForm">
         <label for="nome">Seu Nome</label>
         <input type="text" id="nome" name="nome" required>
-
-        <label for="email">Seu E-mail</label>
-        <input type="email" id="email" name="email" required>
 
         <label for="telefone">Seu Telefone</label>
         <input type="tel" id="telefone" name="telefone" required>
@@ -158,22 +155,21 @@
 
     function enviarWhatsApp() {
         var nome = document.getElementById("nome").value.trim();
-        var email = document.getElementById("email").value.trim();
         var telefone = document.getElementById("telefone").value.trim();
         var cidade = document.getElementById("cidade").value.trim();
         var investimento = document.getElementById("investimento").value;
         var valor = document.getElementById("valor").value;
         var parcela = document.getElementById("parcela").value;
 
-        if (!nome || !email || !telefone || !cidade || !investimento || !valor || !parcela) {
+        if (!nome || !telefone || !cidade || !investimento || !valor || !parcela) {
             alert("Por favor, preencha todos os campos antes de enviar.");
             return;
         }
 
-        var mensagem = `Oi, meu nome é *${nome}*.\nTenho interesse em pegar um crédito para investimento.\n\n` +
-            `📍 *Cidade:* ${cidade}\n📩 *E-mail:* ${email}\n📞 *Telefone:* ${telefone}\n` +
-            `🏡 *Área de Investimento:* ${investimento}\n💰 *Valor do Investimento:* R$ ${parseInt(valor).toLocaleString()}\n` +
-            `💳 *Valor da Parcela:* R$ ${parseInt(parcela).toLocaleString()}`;
+        var mensagem = `OI, MEU NOME É *${nome}*.\nTENHO INTERESSE EM PEGAR UM CRÉDITO PARA INVESTIMENTO.\n\n` +
+            `📍 *CIDADE:* ${cidade}\n📞 *TELEFONE:* ${telefone}\n` +
+            `🏡 *ÁREA DE INVESTIMENTO:* ${investimento}\n💰 *VALOR DO INVESTIMENTO:* R$ ${parseInt(valor).toLocaleString()}\n` +
+            `💳 *VALOR DA PARCELA:* R$ ${parseInt(parcela).toLocaleString()}`;
 
         var url = `https://api.whatsapp.com/send?phone=5598984699652&text=${encodeURIComponent(mensagem)}`;
         window.open(url, "_blank");
