@@ -11,7 +11,7 @@
             text-align: center;
             padding: 20px;
             margin: 0;
-            text-transform: uppercase;
+            text-transform: uppercase; /* Adicionada a transformação para maiúsculas */
         }
 
         .container {
@@ -89,12 +89,14 @@
         <label for="investimento">Área de Investimento</label>
         <select id="investimento" name="investimento" required>
             <option value="" disabled selected>Selecione uma opção</option>
-            <option value="Área Rural">Área Rural</option>
-            <option value="Veículo">Veículo</option>
-            <option value="Imóvel">Imóvel</option>
-            <option value="Construção">Construção</option>
-            <option value="Reforma">Reforma</option>
-            <option value="Loja/Ponto Comercial">Loja/Ponto Comercial</option>
+            <option value="Crédito Rural">Crédito Rural</option>
+            <option value="Crédito Veicular">Crédito Veicular</option>
+            <option value="Crédito Imobiliário">Crédito Imobiliário</option>
+            <option value="Crédito para Construção">Crédito para Construção</option>
+            <option value="Crédito para Reforma">Crédito para Reforma</option>
+            <option value="Crédito Comercial (Loja/Ponto Comercial)">Crédito Comercial (Loja/Ponto Comercial)</option>
+            <option value="Crédito para Máquinas e Equipamentos">Crédito para Máquinas e Equipamentos</option>
+            <option value="Crédito Agropecuário">Crédito Agropecuário</option>
         </select>
 
         <label for="valor">Valor do Investimento</label>
