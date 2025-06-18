@@ -173,7 +173,7 @@
             `🏡 *ÁREA DE INVESTIMENTO:* ${investimento}\n💰 *VALOR DO INVESTIMENTO:* R$ ${parseInt(valor).toLocaleString()}\n` +
             `💳 *VALOR DA PARCELA:* R$ ${parseInt(parcela).toLocaleString()}`;
 
-        var url = `https://api.whatsapp.com/send?phone=5598984699652&text=${encodeURIComponent(mensagem)}`;
+        var url = `https://api.whatsapp.com/send?phone=5598985315556&text=${encodeURIComponent(mensagem)}`;
         window.open(url, "_blank");
     }
 </script>
