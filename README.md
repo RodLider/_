@@ -176,6 +176,7 @@
         var url = `https://api.whatsapp.com/send?phone=5598985315556&text=${encodeURIComponent(mensagem)}`;
         window.open(url, "_blank");
     }
+ </script>
  
 </body>
 </html>
